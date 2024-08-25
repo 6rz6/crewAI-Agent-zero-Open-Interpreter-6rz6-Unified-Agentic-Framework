@@ -1,0 +1,48 @@
+  {
+    "Action Plan": {
+      "How to Think": {
+        "1": "The user wants to achieve a specific task.",
+        "2": "Summarize the task using a clear plan.",
+        "3": "For each command, recap the plan before execution.",
+        "4": "After execution, provide concise output.",
+        "5": "Maintain this structure for future reference."
+      },
+      Tree of Thought (ToT)": {
+        "1": "Recognize the task as a problem to be solved.",
+        "2": "Break down the problem into smaller, manageable parts.",
+        "3": "Analyze each part to identify key concepts and relationships.",
+        "4": "Synthesize the information to form a coherent plan.",
+        "5": "Evaluate the plan for potential flaws and areas for improvement.",
+		"6": "Explain Your reasoning step by step."
+      },
+      "3-Way Conversation": {
+        "1": "Clarify the task requirements and generate another 2 agents which are experts in the tasks field to brainstorm and debate with you",
+        "2": "Ask open-ended questions to gather more information. and answer all of their answers",
+        "3": "Paraphrase and summarize the conversation to ensure understanding. until all you three agree and proceed to the next issue",
+        "4": "Identify potential biases and assumptions in the conversation. and point them out to the other two agents requesting feeback",
+        "5": "Synthesize the information to form a clear plan of action. and execute the final plan which all 3 have agreed on each of its steps and structure"
+      },
+      "Reasoning and Logic": {
+        "1": "Identify the key concepts and relationships involved in the task.",
+        "2": "Apply logical reasoning to eliminate irrelevant information.",
+        "3": "Use inductive and deductive reasoning to form conclusions.",
+        "4": "Evaluate the conclusions for potential flaws and biases.",
+        "5": "Refine the plan based on the results of the reasoning process.",
+	"6": "Think big and in parralel, the universe is infinate and everything happends all at once, not serially in most cases."
+      },
+      "Problem-Solving Strategy": {
+        "1": "Define the problem and identify key constraints.",
+        "2": "Generate expert agents to research and deliver to you potential solutions through brainstorming and mind mapping.",
+        "3": "Evaluate each solution for feasibility and potential impact. and feedback your agents",
+        "4": "Select the most promising solution and refine it as needed. and optimize it",
+        "5": "Implement the solution and monitor its effectiveness."
+      },
+      "Knowledge Management": {
+        "1": "Identify relevant knowledge and information sources. specially from your MemoryDB.json",
+        "2": "Evaluate the credibility and reliability of each source.",
+        "3": "Organize and synthesize the information to form a coherent plan.",
+        "4": "Store the information in a knowledge management system.",
+        "5": "Retrieve and apply the knowledge as needed to inform decision-making."
+      }
+    }
+  }

@@ -1,0 +1,42 @@
+{
+    "PdfTools": {
+        "description": "Useful to scrape a PDF content.",
+        "params": {
+            "file_name": "string"
+        },
+        "result": "Path to the temporary text file containing the extracted content.",
+        "expected_output": "Path of the temporary file with scraped content or None if the PDF is corrupted."
+    },
+    "ScraperTool": {
+        "description": "Useful to scrape a PDF content.",
+        "params": {
+            "file_name": "string"
+        },
+        "result": "Text content extracted from the PDF.",
+        "expected_output": "Text content scraped from specified pages or None if the PDF is corrupted."
+    },
+    "UrlsTool": {
+        "description": "Useful tool to scrap a website content, use to learn more about a given url.",
+        "params": {
+            "url": "string"
+        },
+        "result": "Text content extracted from the webpage.",
+        "expected_output": "Text content scraped from the specified URL."
+    },
+    "YoutubeTranscriptTool": {
+        "description": "Fetch YouTube video transcripts.",
+        "params": {
+            "video_url": "string"
+        },
+        "result": "List of text entries from the transcript.",
+        "expected_output": "List of transcript text entries or None if there's an error retrieving the transcript."
+    },
+    "DuckDuckGoSearchTool": {
+        "description": "Performs a search using DuckDuckGo and returns a list of search results.",
+        "params": {
+            "search_term": "string"
+        },
+        "result": "List of search results.",
+        "expected_output": "A list of textual search results from DuckDuckGo."
+    }
+}

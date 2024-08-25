@@ -1,0 +1,149 @@
+{
+"Tools": {
+"search": {
+"description": "Allows you to search in various platforms for a string and returns relevant results",
+"use": "Search for information on a specific topic",
+"input": {
+"query": "string",
+"platform": "string" // one of the platforms listed below
+},
+"output": {
+"results": "array of relevant results"
+},
+"platforms": [
+"google",
+"yahoo",
+"facebook",
+"github",
+"youtube",
+"vimeo",
+"flickr",
+"twitter",
+"instagram",
+"pinterest",
+"linkedin",
+"stackoverflow",
+"quora",
+"reddit",
+"wiki",
+"arxiv",
+"pdf",
+"google_scholar",
+"google_books",
+"google_news",
+"google_images",
+"google_videos",
+"duckduckgo"
+			]
+		 }
+		}
+}
+
+{
+"Tools": {
+"search": {
+"description": "Allows you to search in various platforms for a string and returns relevant results",
+"use": "Search for information on a specific topic",
+"input": {
+"query": "string",
+"platform": "string" // one of the platforms listed below
+},
+"output": {
+"results": "array of relevant results"
+},
+"platforms": [
+"google",
+"yahoo",
+"facebook",
+"github",
+"youtube",
+"vimeo",
+"flickr",
+"twitter",
+"instagram",
+"pinterest",
+"linkedin",
+"stackoverflow",
+"quora",
+"reddit",
+"wiki",
+"arxiv",
+"pdf",
+"google_scholar",
+"google_books",
+"google_news",
+"google_images",
+"google_videos",
+"duckduckgo"
+]
+},
+"scrape": {
+"description": "Allows you to scrape data from various websites",
+"use": "Scrape data from a specific website",
+"input": {
+"url": "string",
+"method": "string" // one of the methods listed below
+},
+"output": {
+"data": "array of scraped data"
+},
+"methods": [
+{
+"yt_transcribe": 
+"description": "Extracts the verbal content of a YouTube video by downloading and analyzing the video's transcript",
+"use": "Transcribe a YouTube video",
+"input": {
+"video_url": "string"
+},
+"output": {
+"transcript": "string"
+}
+{
+"name": "BeautifulSoup",
+"description": "Scrape data using BeautifulSoup",
+"example": "import requests\nfrom bs4 import BeautifulSoup\nurl = 'https://www.example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.content, 'html.parser')\ndata = soup.find_all('div', class_='example')\nprint(data)"
+},
+{
+"name": "Scrapy",
+"description": "Scrape data using Scrapy",
+"example": "import scrapy\nclass ExampleSpider(scrapy.Spider):\n name = 'example'\n start_urls = ['https://www.example.com']\n\n def parse(self, response):\n data = response.css('div.example::text').get()\n yield {'data': data}"
+},
+{
+"name": "Selenium",
+"description": "Scrape data using Selenium",
+"example": "from selenium import webdriver\nfrom selenium.webdriver.common.by import By\nfrom selenium.webdriver.support.ui import WebDriverWait\nfrom selenium.webdriver.support import expected_conditions as EC\nurl = 'https://www.example.com'\ndriver = webdriver.Chrome()\ndriver.get(url)\ndata = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, 'div.example'))).text\nprint(data)"
+},
+{
+"name": "curl",
+"description": "Scrape data using curl",
+"example": "curl -X GET 'https://www.example.com' -H 'User-Agent: Mozilla/5.0'"
+},
+{
+"name": "wget",
+"description": "Scrape data using wget",
+"example": "wget -q -O - 'https://www.example.com'"
+},
+{
+"name": "requests",
+"description": "Scrape data using requests",
+"example": "import requests\nurl = 'https://www.example.com'\nresponse = requests.get(url)\ndata = response.text\nprint(data)"
+},
+{
+"name": "lxml",
+"description": "Scrape data using lxml",
+"example": "import requests\nfrom lxml import html\nurl = 'https://www.example.com'\nresponse = requests.get(url)\ntree = html.fromstring(response.content)\ndata = tree.xpath('//div[@class="example"]')\nprint(data)"
+},
+{
+"name": "pyquery",
+"description": "Scrape data using pyquery",
+"example": "import requests\nfrom pyquery import PyQuery\nurl = 'https://www.example.com'\nresponse = requests.get(url)\npq = PyQuery(response.content)\ndata = pq('.example')\nprint(data)"
+},
+{
+"name": "html5lib",
+"description": "Scrape data using html5lib",
+"example": "import requests\nfrom html5lib import HTMLParser\nurl = 'https://www.example.com'\nresponse = requests.get(url)\nparser = HTMLParser()\ndata = parser.parse(response.content)\nprint(data)"
+}
+]
+}
+}
+}
